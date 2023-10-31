@@ -1,2 +1,1 @@
-# EK4-Cybersecurity-Barcamp-CTF-Quest-readme.md
-Quest Web Challenge
+# EK4-Cybersecurity-Barcamp-CTF
