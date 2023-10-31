@@ -63,20 +63,20 @@ Also the userid was encoded in base64 when decoding it, it was the userid.
 
 With the look at the cookies, we could be able to  modify the userid cookie to access other users details and documents. Also we could also modify the AccessLevel cookie and increase our privileges. 
 
-On looking at the profile page, we were able to see  a message from bob. It  leaked bob userid. So i noted  down the userid.  Which was 71
+On looking at the profile page, we were able to see  a message from bob. It  leaked bob userid. So i noted  down the userid.  Which was 71. If we could edit this value and be able to access another user details, the application could be vulnerable to IDOR.  
  
- If we could edit this value and be able to access another user details, the application could be vulnerable to IDOR.  
- IDOR vulnerabilities occur  when a web application exposes a direct reference to an object, like a file or database  resource, which the end-user can directly control to obtain access to other similar objects
+IDOR vulnerabilities occur  when a web application exposes a direct reference to an object, like a file or database  resource, which the end-user can directly control to obtain access to other similar objects
  
- With this in mind, i decided to edit the value with bob userid and see if we could be able to access bob dashboard. 
+With this in mind, i decided to edit the value with bob userid and see if we could be able to access bob dashboard. 
 
-Bob  uid was 71 as identified previously. So base64encoded it as below. 
+Bob  uid was 71 as identified previously. So base64encoded it as below.  
+
 ![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/encoded_reference.png)
 
 
 I later url encoded the value using cyberchef. 
 
-![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/encoded_reference.png)
+![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/cyberchef_b64.png)
 
 
 I then edited the values and replaced it with bob userid in the uid parameter and base64 encoded uid in  userid cookie value. 
