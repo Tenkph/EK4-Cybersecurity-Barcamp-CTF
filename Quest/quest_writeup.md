@@ -23,7 +23,7 @@ Visiting the files required us  to login in.
 
 I had forgetten to check for common files e.g  readme.md which are usually found in web applications and went down a rabbit hole, which I never got anything useful.
 
-But when visiting README.md  i got the README.md file. On  looking at its contents, i came across support email and how  the emails were generated for login page. We had the support email so all that we needed to login was the password for jameson@quest-dev.com user.  
+But when visiting README.md  i got the README.md file. On  looking at its contents, i came across Project Manager email and how  the emails were generated for login page. We had the project manager email so all that we needed to login was the password for jameson@quest-dev.com user.  
 
 
 ![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/readme_file.png)
@@ -53,13 +53,13 @@ I used it login,  to the application and we got the first flag.
 # Horizontal Privilege Escalation 
 
 
-On login  I decided to intercept the login. I noticed the server was  issuing userid and AccessLevel cookies after logging to the application. 
+On login  I decided to intercept the login request. I noticed the server was  issuing userid and AccessLevel cookies after logging to the application. 
 
 cookies used: PHPSESSID=njhcahtpk1nus9fe1ju5l8v1br; AccessLevel=dXNlcg%3D%3D; userid=MTI%3D
 
 accesslevel is base64 encoded which we could decode and understand how the application was utilising the accesslevel  cookie. 
 
-Also the userid was encoded in base64 when decoding it, it was the userid.
+Also the userid was encoded in base64 when decoding it, it was jameson userid.
 
 ![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/user_id.png)
 
