@@ -97,7 +97,7 @@ I download the csv file and it contained names and  default credentials and it w
 ![ csv file](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/quest_access_log_csv.png)
 
  
-Because we  know how the  login email are created, i decided to come up with a list of emails, using the names found the csv file. The emails were as below: 
+Because we  know how the  login email are created, i decided to come up with a list of emails, using the names found in  the csv file. The emails were as below: 
 
 ![ email list](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/emailList.png)
 
