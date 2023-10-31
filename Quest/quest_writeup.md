@@ -12,7 +12,9 @@ I  decided to look for any hidden directories.  I started with directory busting
 
 
 I had left a ffuf running in the background to identify and hidden directories or files, but it  never  got any thing interesting.  
-Output of the ffuf scan. 
+Output of the ffuf scan.  
+
+![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/ffuf_output.png)
 
 
 
@@ -21,7 +23,9 @@ Visiting the files required us  to login in.
 
 I had forgetten to check for common files e.g  readme.md which are usually found in web applications and went down a rabbit hole, which I never got anything useful.
 
-But when visiting README.md  i got the README.md file. On  looking at its contents, i came across support and how  the emails were created for login page. 
+But when visiting README.md  i got the README.md file. On  looking at its contents, i came across support and how  the emails were created for login page.  
+
+![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/readme_file.png)
 
 
 
@@ -35,6 +39,7 @@ email: jameson@quest-dev.com
 
 I used rockyou.txt wordlist to bruteforce the login page  using hydra and the command was as follows: 
 
+![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/hydra.png)
 
 
 After sometime of bruteforcing, I was able to get the  password for  jameson@quest-dev.com.
@@ -54,7 +59,7 @@ accesslevel is base64 encoded which we could decode and understand how the appli
 
 Also the userid was encoded in base64 when decoding it, it was the userid.
 
-
+![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/user_id.png)
 
 With the look at the cookies, we could be able to  modify the userid cookie to access other users details and documents. Also we could also modify the AccessLevel cookie and increase our privileges. 
 
