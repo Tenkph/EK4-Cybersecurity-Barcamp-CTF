@@ -126,7 +126,7 @@ With this we confirmed  that the application  was vulnerable to command injectio
 
 I  used the find command to  identify the flag. 
 
-find / -name *bye* 2> /dev/null 
+find / -name \*bye\* 2> /dev/null 
 
 ![find command](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/find_command.png)
 
