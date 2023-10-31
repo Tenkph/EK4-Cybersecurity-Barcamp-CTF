@@ -14,7 +14,7 @@ I  decided to look for any hidden directories.  I started with directory busting
 I had left a ffuf running in the background to identify and hidden directories or files, but it  never  got any thing interesting.  
 Output of the ffuf scan.  
 
-![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/ffuf_output.png)
+![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/ffufScan_output.png)
 
 
 
@@ -23,7 +23,8 @@ Visiting the files required us  to login in.
 
 I had forgetten to check for common files e.g  readme.md which are usually found in web applications and went down a rabbit hole, which I never got anything useful.
 
-But when visiting README.md  i got the README.md file. On  looking at its contents, i came across support and how  the emails were created for login page.  
+But when visiting README.md  i got the README.md file. On  looking at its contents, i came across support email and how  the emails were generated for login page. We had the support email so all that we needed to login was the password for jameson@quest-dev.com user.  
+
 
 ![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/readme_file.png)
 
