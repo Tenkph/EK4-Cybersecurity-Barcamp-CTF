@@ -5,7 +5,7 @@
 ## Initial Access
 
 I launched the instance and  navigated to the target. 
-On visiting the target i  came across a login page. Since we did not have any credentials to access the app, I deciding to do more recon.  
+On visiting the target i  came across a login page. Since we did not have any credentials to access the app, I decided to do more recon.  
 I  decided to look for any hidden directories.  I started with directory busting using ffuf
 
 ![ ffuf Scan](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/ffuf_scan.png)
@@ -34,7 +34,7 @@ With this  in mind, i decided to bruteforce the login page, since we  now had  o
 
 login parameters
 
-email=^USER^&password=^PASS^
+email=jameson%40quest-dev.com&password=1234
 
 email: jameson@quest-dev.com
 
@@ -43,7 +43,8 @@ I used rockyou.txt wordlist to bruteforce the login page  using hydra and the co
 ![ ffuf Scan Output](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/hydra.png)
 
 
-After sometime of bruteforcing, I was able to get the  password for  jameson@quest-dev.com.
+After sometime of bruteforcing, I was able to get the  password for  jameson@quest-dev.com.  
+
 The password was basketball. 
 
 I used it login,  to the application and we got the first flag. 
