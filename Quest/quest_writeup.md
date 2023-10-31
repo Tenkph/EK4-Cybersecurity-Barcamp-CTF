@@ -8,6 +8,7 @@ I launched the instance and  navigated to the target.
 On visiting the target i  came across a login page. Since we did not have any credentials to access the app, I deciding to do more recon.  
 I  decided to look for any hidden directories.  I started with directory busting using ffuf
 
+![ ffuf Scan](https://github.com/Tenkph/EK4-Cybersecurity-Barcamp-CTF/blob/main/Quest/screenshots/ffuf_scan.png)
 
 
 I had left a ffuf running in the background to identify and hidden directories or files, but it  never  got any thing interesting.  
