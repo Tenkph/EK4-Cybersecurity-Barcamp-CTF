@@ -1,8 +1,8 @@
-Quest CTFroom
+# Quest CTFroom
 
-Quest Web Challenge
+# Quest Web Challenge
 
-Initial Access
+## Initial Access
 
 I launched the instance and  navigated to the target. 
 On visiting the target i  came across a login page. Since we did not have any credentials to access the app, I deciding to do more recon.  
@@ -48,7 +48,7 @@ The password was basketball.
 I used it login,  to the application and we got the first flag. 
 
 
-Horizontal Privilege Escalation 
+# Horizontal Privilege Escalation 
 
 
 On login  I decided to intercept the login. I noticed the server was  issuing userid and AccessLevel cookies after logging to the application. 
@@ -87,7 +87,7 @@ I had intercepted the  request and sent to repeater for more testing. I sent the
 
 And we able to get  access to bob dashboard and got the second flag.
 
-Vertical Privilege Escalation. 
+# Vertical Privilege Escalation. 
 
 On bob dashboard, there was a files menu, I decided to visit the files menu. I came across a csv file. 
 I download the csv file and it contained names and  default credentials and it was  indicating if there were changed or not.
@@ -102,7 +102,7 @@ Because we  know how the  login email are created, i decided to come up with a l
 
 I started  by trying to test the password to  users who had not changed it yet.  
 
-email: stephen@quest-dev.com
+email: stephen@quest-dev.com  
 pass: R6XnGs@!9P&34
 
 Stephen had not changed his password.  We were able to succesfully login as Stephen user. 
@@ -113,7 +113,7 @@ And we got access  as the webmaster. On the dashboard we could  find the third f
 
 
 
-Injection 
+# Injection 
 
 There was an input to input a command, So intercepted the request and sent it to repeater and tested for command injection. 
 
